@@ -1,4 +1,8 @@
-
+/* Christopher Cabrera
+* November 2, 2025
+* CSUGlobal CSC320-1 Programming I
+* Home class with constructor and methods to update, store, remove, and export all home information
+*/
 public class Home {
 	private int squareFeet;
 	private String address;
