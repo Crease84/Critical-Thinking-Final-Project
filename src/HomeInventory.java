@@ -1,3 +1,9 @@
+/* Christopher Cabrera
+* November 2, 2025
+* CSUGlobal CSC320-1 Programming I
+* Menu interface to call information stored in the "Home" class
+* Has option to save Home information to external file to print
+*/
 import java.util.Scanner;
 import java.io.PrintWriter;
 
@@ -45,14 +51,14 @@ public class HomeInventory {
 			    pause(scnr);
 			    break;
 			case '5':
-				System.out.println("Do you want to print home information to a file? (Y/N)");
+				System.out.println("Do you want to print your current home information to a file? (Y/N)");
 				userInput = scnr.next().charAt(0);
 				if (userInput == 'y' || userInput == 'Y') {
 					try {
 						PrintWriter out = new PrintWriter("C:\\Temp\\Home.txt");
 						out.println(myHome.printInfo());
 						out.close();
-						System.out.println("Saved to file!");
+						System.out.println("Successfully printed to file!");
 					}
 					catch (Exception e) {
 						System.out.println("Something went wrong " + e.getMessage());

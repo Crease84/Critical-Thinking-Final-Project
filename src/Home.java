@@ -95,7 +95,9 @@ public class Home {
 	}
 	
 	public String printInfo() {
-		return("Model:" + this.ModelName + "\n"
+		
+		
+		return("Model: " + this.ModelName + "\n"
 				+ "Address: " + this.address + " " + this.city + ", " + this.state + " " + this.zipCode + "\n"
 				+ this.squareFeet + " sq. ft\n"
 				+ "Market status: " + this.marketStatus + "\n");
