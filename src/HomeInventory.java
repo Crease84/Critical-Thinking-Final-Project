@@ -42,7 +42,7 @@ public class HomeInventory {
 				pause(scnr);
 				break;
 			case '3': 
-				getUserHome(myHome, scnr);
+				System.out.println(getUserHome(myHome, scnr));
 				break;
 			case '4': 
 			    System.out.println("Enter new market status:");
@@ -81,7 +81,7 @@ public class HomeInventory {
 	}
 	
 	//Populates variables with user input to create Home object
-	public static void getUserHome(Home myHome, Scanner scnr) {
+	public static String getUserHome(Home myHome, Scanner scnr) {
 
 		System.out.println("Enter square footage:");
 		int userSquareFeet = scnr.nextInt();
@@ -104,7 +104,7 @@ public class HomeInventory {
 		System.out.println("Enter market status");
 		String userMarketStatus = scnr.nextLine();
 		
-		myHome.addHome(userSquareFeet, userAddress, userCity, userState, userZipCode, userModel, userMarketStatus);
+		return (myHome.addHome(userSquareFeet, userAddress, userCity, userState, userZipCode, userModel, userMarketStatus));
 	}
 	// pause so user can see result before printing the menu again
 	public static void pause(Scanner scnr) {

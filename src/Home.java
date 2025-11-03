@@ -72,7 +72,7 @@ public class Home {
 		}
 		else {
 	    	System.out.println("Model: " + this.ModelName);
-	    	System.out.println("Address: " + this.address + " " + this.city + ", " + this.state + " " + this.zipCode);
+	    	System.out.println("Address: " + this.address + ", " + this.city + ", " + this.state + " " + this.zipCode);
 	    	System.out.println(this.squareFeet + " sq. ft");
 	   	 	System.out.println("Market status: " + this.marketStatus);
 		}
